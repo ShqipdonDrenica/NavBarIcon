@@ -139,7 +139,7 @@ class _HomePageState extends State<HomePage> {
               ),
               onPressed: () {
                 setState(() {
-                  foods2.clear();
+                  foods.clear();
                 });
 
                 //foods2.removeRange(3, foods2.length);
