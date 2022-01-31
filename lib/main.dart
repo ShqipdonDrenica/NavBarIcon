@@ -118,10 +118,14 @@ class _HomePageState extends State<HomePage> {
                   style: TextStyle(color: Colors.white),
                 ),
                 onPressed: () {
+                  setState(() {
+                    foods12.shuffle();
+                  });
+
                   print(foods12);
                   //var element = getRandomElement(foods);
                   //print(foods[randomIndex]);
-                  //sumL1L2.shuffle();
+
                   //var randomItem = (foods2..shuffle()).first;
                   //var element = foods[_random.nextInt(foods.length)];
                 }),
