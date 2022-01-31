@@ -120,7 +120,7 @@ class _HomePageState extends State<HomePage> {
                 ),
                 onPressed: () {
                   setState(() {
-                    foods2.shuffle();
+                    isDeleted ? foods.shuffle() : foods2.shuffle();
                   });
 
                   print(foods2);
