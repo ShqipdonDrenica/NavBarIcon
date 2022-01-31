@@ -138,7 +138,10 @@ class _HomePageState extends State<HomePage> {
                 style: TextStyle(color: Colors.white),
               ),
               onPressed: () {
-                foods2.clear();
+                setState(() {
+                  foods2.clear();
+                });
+
                 //foods2.removeRange(3, foods2.length);
                 //foods.addAll(foods);
                 //print(foods);
