@@ -76,7 +76,7 @@ class _HomePageState extends State<HomePage> {
               width: 200,
               color: Colors.cyan,
               child: Text(
-                foods12[0],
+                foods[0],
                 style: TextStyle(fontSize: 40),
               ),
               //   child: ListView(
