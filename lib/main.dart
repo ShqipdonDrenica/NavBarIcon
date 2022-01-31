@@ -142,7 +142,7 @@ class _HomePageState extends State<HomePage> {
                 setState(() {
                   isDeleted = true;
                   foods2.clear();
-                  print(foods0);
+                  print(foods);
                   print(foods2);
                 });
 
