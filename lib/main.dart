@@ -37,12 +37,12 @@ class _HomePageState extends State<HomePage> {
     "Gullash"
   ];
   List<String> foods2 = [];
+  // List<String> foods12 = [];
   //var list = [];
   //list= new List.from(foods).addAll(foods2);
   // var foods3 = foods + foods2;
   // Combining lists
   //gfg1.addAll(gfg2);
-  var foods12;
   @override
   void initState() {
     foods12 = foods + foods2;
@@ -50,6 +50,7 @@ class _HomePageState extends State<HomePage> {
 
   TextEditingController controller = TextEditingController();
   final _random = new Random();
+  bool isDeleted = false;
 
   var randomIndex;
 
@@ -76,7 +77,7 @@ class _HomePageState extends State<HomePage> {
               width: 200,
               color: Colors.cyan,
               child: Text(
-                foods[0],
+                isDeleted ? foods[0] : foods2[0],
                 style: TextStyle(fontSize: 40),
               ),
               //   child: ListView(
@@ -105,8 +106,9 @@ class _HomePageState extends State<HomePage> {
                 ),
                 onPressed: () {
                   setState(() {
+                    foods2.addAll(foods);
                     foods2.add(controller.text);
-                    foods.addAll(foods2);
+
                     print(foods);
                   });
                 }),
@@ -119,7 +121,7 @@ class _HomePageState extends State<HomePage> {
                 ),
                 onPressed: () {
                   setState(() {
-                    foods.shuffle();
+                    foods2.shuffle();
                   });
 
                   print(foods);
@@ -139,8 +141,10 @@ class _HomePageState extends State<HomePage> {
               ),
               onPressed: () {
                 setState(() {
-                  foods.clear();
-                  print(foods);
+                  isDeleted = true;
+                  foods2.clear();
+                  print(foods2);
+                  print(foods2);
                 });
 
                 //foods2.removeRange(3, foods2.length);
