@@ -108,7 +108,7 @@ class _HomePageState extends State<HomePage> {
                   setState(() {
                     foods2.add(controller.text);
 
-                    print(foods);
+                    print(foods2);
                   });
                 }),
             Text(''),
@@ -123,7 +123,7 @@ class _HomePageState extends State<HomePage> {
                     foods2.shuffle();
                   });
 
-                  print(foods);
+                  print(foods2);
                   //var element = getRandomElement(foods);
                   //print(foods[randomIndex]);
 
@@ -142,7 +142,7 @@ class _HomePageState extends State<HomePage> {
                 setState(() {
                   isDeleted = true;
                   foods2.clear();
-                  print(foods2);
+                  print(foods0);
                   print(foods2);
                 });
 
