@@ -122,7 +122,7 @@ class _HomePageState extends State<HomePage> {
                   setState(() {
                     isDeleted ? foods.shuffle() : foods2.shuffle();
                   });
-
+                  print(foods);
                   print(foods2);
                   //var element = getRandomElement(foods);
                   //print(foods[randomIndex]);
