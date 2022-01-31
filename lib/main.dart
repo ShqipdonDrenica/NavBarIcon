@@ -36,12 +36,7 @@ class _HomePageState extends State<HomePage> {
     "Dollme",
     "Gullash"
   ];
-  List<String> foods2 = [
-    'fli',
-    'Patate',
-    'Pite',
-    'Biftek'
-  ];
+  List<String> foods2 = [];
   //var list = [];
   //list= new List.from(foods).addAll(foods2);
   // var foods3 = foods + foods2;
