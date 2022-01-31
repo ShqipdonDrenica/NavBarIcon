@@ -45,7 +45,7 @@ class _HomePageState extends State<HomePage> {
   //gfg1.addAll(gfg2);
   @override
   void initState() {
-    foods12 = foods + foods2;
+    foods2.addAll(foods);
   }
 
   TextEditingController controller = TextEditingController();
@@ -106,7 +106,6 @@ class _HomePageState extends State<HomePage> {
                 ),
                 onPressed: () {
                   setState(() {
-                    foods2.addAll(foods);
                     foods2.add(controller.text);
 
                     print(foods);
