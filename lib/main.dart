@@ -106,6 +106,7 @@ class _HomePageState extends State<HomePage> {
                 onPressed: () {
                   setState(() {
                     foods2.add(controller.text);
+                    print(foods2);
                   });
                 }),
             Text(''),
