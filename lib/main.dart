@@ -119,10 +119,10 @@ class _HomePageState extends State<HomePage> {
                 ),
                 onPressed: () {
                   setState(() {
-                    foods12.shuffle();
+                    foods.shuffle();
                   });
 
-                  print(foods12);
+                  print(foods);
                   //var element = getRandomElement(foods);
                   //print(foods[randomIndex]);
 
