@@ -48,7 +48,7 @@ class _HomePageState extends State<HomePage> {
     foods12 = foods + foods2;
   }
 
-  late String name;
+  TextEditingController controller = TextEditingController();
   final _random = new Random();
 
   var randomIndex;
@@ -90,9 +90,10 @@ class _HomePageState extends State<HomePage> {
               //   ),
             ),
             TextField(
-              onChanged: (str) {
-                name = str;
-              },
+              controller: controller,
+              // onChanged: (str) {
+              //   name = str;
+              // },
               maxLength: 20,
             ),
             Text(''),
@@ -104,7 +105,7 @@ class _HomePageState extends State<HomePage> {
                 ),
                 onPressed: () {
                   setState(() {
-                    foods2.add(name);
+                    foods2.add(controller.text);
                   });
                 }),
             Text(''),
